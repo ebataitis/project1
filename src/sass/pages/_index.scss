@@ -1,0 +1,20 @@
+.home-page header .top-menu{
+    box-shadow: 0 3px 10px #444;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .social{
+        margin-left: 15px;
+        li{
+            display: inline-block;
+        }
+    }
+    .contacts{
+        margin-right: 15px;
+        li{
+            display: inline-block;
+        }
+    }
+
+}
