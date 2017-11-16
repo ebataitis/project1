@@ -1,20 +1,89 @@
-.home-page header .top-menu{
-    box-shadow: 0 3px 10px #444;
-    .container{
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+section.landing-page-home {
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center 200px;
+    position: relative;
+    .content {
+        position: absolute;
+        top: 53%;
+        left: 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
-    .social{
-        margin-left: 15px;
-        li{
-            display: inline-block;
-        }
-    }
-    .contacts{
-        margin-right: 15px;
-        li{
-            display: inline-block;
-        }
-    }
+    .wrapper {
 
+        text-align: center;
+    }
+    .arrow-left {
+        width: 66px;
+        height: 66px;
+        border: 2px solid $color-black;
+        text-align: center;
+        cursor: pointer;
+    }
+    .arrow-right {
+        width: 66px;
+        height: 66px;
+        border: 2px solid $color-black;
+        text-align: center;
+        cursor: pointer;
+    }
+    .fa {
+        line-height: 66px;
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 50px;
+        color: $color-black;
+
+        font-weight: 600;
+    }
+    p {
+        @include text;
+        margin: auto;
+        line-height: 22px;
+    }
+    .btn {
+        @include button($color-black);
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+section.features-home {
+    background: $color-light-grey;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        justify-content: space-around;
+    }
+    .wrapper {
+        width: 31%;
+        text-align: center;
+        margin-bottom: 30px;
+        .fa {
+            font-size: 36px;
+            color: $color-dark-grey;
+        }
+        h3 {
+            font-size: 24px;
+            color: $color-blue;
+            margin: 10px 0;
+        }
+        p {
+            @include text;
+        }
+    }
 }

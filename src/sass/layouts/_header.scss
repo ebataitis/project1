@@ -1,0 +1,50 @@
+header {
+    background: $color-white;
+    .top-menu {
+        box-shadow: 0 3px 10px #999;
+        line-height: 45px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .social {
+            margin-left: 15px;
+            li {
+                display: inline-block;
+            }
+            .fa {
+                color: $color-dark-grey;
+                margin-right: 5px;
+                font-size: 18px;
+            }
+        }
+        .contacts {
+            margin-right: 15px;
+            li {
+                display: inline-block;
+                @include text;
+                margin-left: 10px;
+            }
+        }
+
+    }
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+       padding: 26px 0;
+        align-items: center;
+        li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        a{
+            @include text;
+            text-transform: uppercase;
+            transition: .2s;
+            &:hover{
+                color: $color-blue;
+            }
+        }
+    }
+
+}
