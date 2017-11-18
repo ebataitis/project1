@@ -3,6 +3,16 @@ const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
+const uglify = require('gulp-uglify');
+const rename = require("gulp-rename");
+const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+const plumber = require('gulp-plumber');
+
+gulp.task('test', function () {
+    console.log('gulp is running')
+});
 
 gulp.task('browser-sync', function () {
     browserSync.init({
@@ -10,6 +20,18 @@ gulp.task('browser-sync', function () {
     });
 });
 
+gulp.task('js', function () {
+    return gulp.src('./src/js/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist/js/files'));
+
+});
 
 
 gulp.task('compile', function () {
@@ -19,7 +41,9 @@ gulp.task('compile', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(cleanCSS({debug: true}, function (details) {
+        .pipe(cleanCSS({
+            debug: true
+        }, function (details) {
             console.log(details.name + ': ' + details.stats.originalSize);
             console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
@@ -29,8 +53,10 @@ gulp.task('compile', function () {
 gulp.task('watch', function () {
     gulp.watch('./src/sass/**/*.scss', ['compile']);
     gulp.watch('./dist/**/*.php').on("change", browserSync.reload);
+
+    gulp.watch('./src/js/*.js', ['js']).on("change", browserSync.reload);
+
     gulp.watch('./dist/css/*.css').on("change", browserSync.reload);
 });
 
 gulp.task('default', ['watch', 'browser-sync']);
-

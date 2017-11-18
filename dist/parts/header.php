@@ -11,12 +11,12 @@
                 </nav>
                 <nav class="contacts">
                     <ul>
-                        <li>Mon - Sat 9.00 - 17.00</li>
+                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Mon - Sat 9.00 - 17.00</li>
                         <li>
-                            <a href="tel:+6494461709">+6494461709</a>
+                            <a href="tel:+6494461709"><i class="fa fa-phone" aria-hidden="true"></i>+6494461709</a>
                         </li>
                         <li>
-                            <a href="mailto:info@gmail.com"></a>info@gmail.com
+                            <a href="mailto:info@gmail.com"></a><i class="fa fa-envelope-o" aria-hidden="true"></i>info@gmail.com
                         </li>
                     </ul>
                 </nav>
@@ -26,12 +26,12 @@
             <img src="img/logo.png" alt="logo">
             <nav>
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">pages</a></li>
-                    <li><a href="">projects</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="./contacts.php" target="_blank">contact us</a></li>
+                    <li><a href="./index.php">home</a></li>
+                    <li><a href="./about.php">about</a></li>
+                    <li><a href="./pages.php">pages</a></li>
+                    <li><a href="./projects.php">projects</a></li>
+                    <li><a href="./blog.php">blog</a></li>
+                    <li><a href="./contacts.php" >contact us</a></li>
                 </ul>
             </nav>
         </div>

@@ -65,6 +65,38 @@
         </div>
         
     </section>
+    <section class="stats-home">
+        <div class="container">
+            <div class="wrapper">
+                <h3>456</h3>
+                <div class="h-line"></div>
+                <h4>HAPPY CLIENTS</h4>
+            </div>
+            <div class="wrapper">
+                <h3>56</h3>
+                <div class="h-line"></div>
+                <h4>PROJECTS</h4>
+            </div>
+            <div class="wrapper">
+                <h3>456</h3>
+                <div class="h-line"></div>
+                <h4>HAPPY CLIENTS</h4>
+            </div>
+            <div class="wrapper">
+                <h3>456</h3>
+                <div class="h-line"></div>
+                <h4>HAPPY CLIENTS</h4>
+            </div>
+        </div>
+    </section>
+    <section class="recent-blog-home">
+        <div class="container">
+            <h2>from blog</h2>
+            <div class="h-line"></div>
+            <div class="news"></div>
+        </div>
+    </section>
+    <?php include 'parts/footer.php'?>
 </body>
 <script src="js/files/script.js"></script>
 </html>

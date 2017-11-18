@@ -8,10 +8,10 @@ body {
 
 section.landing-page-home {
     height: 100vh;
-    
+ 
     background-size: cover;
     background-position: center 200px;
-    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%,0 100%);
     .content {
         position: absolute;
         top: 53%;
@@ -28,24 +28,25 @@ section.landing-page-home {
     .arrow-left {
         width: 66px;
         height: 66px;
-        border: 2px solid $color-black;
+        border: 2px solid $color-white;
         text-align: center;
         cursor: pointer;
     }
     .arrow-right {
         width: 66px;
         height: 66px;
-        border: 2px solid $color-black;
+        border: 2px solid $color-white;
         text-align: center;
         cursor: pointer;
     }
     .fa {
         line-height: 66px;
         font-size: 35px;
+         color: $color-white;
     }
     h1 {
         font-size: 50px;
-        color: $color-black;
+        color: $color-white;
 
         font-weight: 600;
     }
@@ -53,9 +54,10 @@ section.landing-page-home {
         @include text;
         margin: auto;
         line-height: 22px;
+         color: $color-white;
     }
     .btn {
-        @include button($color-black);
+        @include button($color-white);
         margin: auto;
         margin-top: 20px;
     }
@@ -81,9 +83,57 @@ section.features-home {
             font-size: 24px;
             color: $color-blue;
             margin: 10px 0;
+            text-transform: uppercase;
         }
         p {
             @include text;
         }
+    }
+}
+section.stats-home{
+    width: 100%;
+    background: $color-blue;
+    padding: 40px 0;
+    .container{
+        display: flex;
+    }
+    .wrapper{
+        width: 25%;
+        text-align: center;
+    }
+    h3{
+        font-size: 50px;
+        font-weight: 600;
+        color: $color-white;
+    }
+    .h-line{
+        height: 2px;
+        width: 37px;
+        background: $color-white;
+        margin: 20px auto;
+    }
+    h4{
+        font-size: 26px;
+        font-weight: 400;
+        color: $color-white;
+    }
+}
+section.recent-blog-home{
+    margin-top: 60px;
+    h2{
+        @include header;
+        text-transform: uppercase;
+    }
+    .h-line{
+        margin-top: 10px;
+        width: 64px;
+        height: 2px;
+        background: $color-blue;
+    }
+    .news{
+        margin: 20px auto;;
+        width: 60%;
+        height: 200px;
+        border: 2px solid $color-blue;
     }
 }
