@@ -2,6 +2,10 @@
     font-size: 14px;
     color: $color-dark-grey;
     line-height: 31px;
+    @include mobile{
+        font-size: 11px;
+        line-height: 24px;
+    }
 };
 @mixin button($color){
     width: 140px;
@@ -15,9 +19,22 @@
 @mixin header{
     color: $color-blue;
     font-size: 35px;
+    @include tablet-landscape{
+        font-size: 28px;
+    }
+    @include tablet-portrait{
+        font-size: 24px;
+    }
+    @include mobile{
+        font-size: 22px;
+    }
 }
 @mixin white-h2{
     font-size: 24px;
     color: $color-white;
     font-family: Verdana, Geneva, sans-serif;
+    @include tablet-landscape{
+        font-size: 16px;
+         margin-left: 10px;
+    }
 }

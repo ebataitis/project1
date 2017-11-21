@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="en">
-<?php include 'parts/head.php'?>
-
+<head>
+<title>Home</title>
+    <?php include 'parts/head.php'?>
+</head>
 <body class="home-page">
+        <?php include 'parts/header.php'?>
    <div class="hidden">
        <img src="img/index/landing0.jpeg" alt="">
        <img src="img/index/landing1.jpeg" alt="">
@@ -10,7 +13,6 @@
        <img src="img/index/landing3.jpeg" alt="">
    </div>
     <section class="landing-page-home">
-        <?php include 'parts/header.php'?>
         <div class="content">
             <div class="arrow-left">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -18,7 +20,7 @@
             <div class="wrapper">
                 <h1>We care about your buisness</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, sapiente accusantium ea fugit. Minus, provident inventore..</p>
-                <a href="">
+                <a href="about.php">
                     <div class="btn">about us</div>
                 </a>
 

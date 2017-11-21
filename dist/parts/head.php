@@ -7,4 +7,5 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Gulp Boiler Template</title>
+  <script src="./js/jquery-3.2.1.min.js"></script>
 </head>

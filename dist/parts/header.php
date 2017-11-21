@@ -24,6 +24,7 @@
         </div>
         <div class="main-menu container">
             <img src="img/logo.png" alt="logo">
+            <i class="fa fa-bars" aria-hidden="true"></i>
             <nav>
                 <ul>
                     <li><a href="./index.php">home</a></li>

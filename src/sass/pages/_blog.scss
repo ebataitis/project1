@@ -36,8 +36,11 @@ section.blog {
                 line-height: 18px;
             }
         }
-        p {
+        .post-text {
             line-height: 24px;
+            width: 90%;
+            text-overflow: clip;
+            overflow: hidden;
 
         }
         .btn {
@@ -47,6 +50,11 @@ section.blog {
             button {
                 @include button($color-white);
                 background: $color-blue;
+                cursor: pointer;
+                transition: .3s;
+                &:active {
+                    transform: scale(.9);
+                }
             }
         }
         ul {
@@ -75,8 +83,45 @@ section.blog {
                 line-height: 20px;
             }
         }
+        .share-coment-area {
+            display: none;
+            .inputs {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                input {
+                    width: 30%;
+                    margin-top: 22px;
+                    font-size: 14px;
+                    line-height: 2.5;
+                    padding-left: 10px;
+                }
+                textarea {
+                    padding-left: 10px;
+                    width: 95.5%;
+                    margin: 30px auto;
+                    font-family: Verdana, Geneva, sans-serif;
+                    font-size: 14px;
+                }
+                .submit {
+                    width: 155px;
+                    margin: 0;
+                    color: $color-white;
+                    background: $color-blue;
+                    border: none;
+                    font-family: Verdana, Geneva, sans-serif;
+                    margin-bottom: 78px;
+                    text-align: center;
+                    padding: 0;
+                    cursor: pointer;
+
+                }
+            }
+        }
     }
     .blog-right {
+        margin-bottom: 80px;
         width: 30.5%;
         .search {
             display: flex;

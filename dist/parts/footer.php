@@ -20,7 +20,7 @@
                     <li><a href="">consequatur</a></li>
                 </ul>
             </div>
-            <div class="wrapper-center">
+            <div class="wrapper-center order">
                 <h3>relaited links</h3>
                 <ul>
                     <li><a href="">consequatur</a></li>
@@ -49,3 +49,4 @@
         <h4>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Egidijus. All Rights Reserved</h4>
     </div>
 </footer>
+

@@ -8,10 +8,9 @@ body {
 
 section.landing-page-home {
     height: 100vh;
- 
     background-size: cover;
-    background-position: center 200px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%,0 100%);
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
     .content {
         position: absolute;
         top: 53%;
@@ -20,46 +19,132 @@ section.landing-page-home {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablet-landscape {
+            top: 43%;
+        }
     }
     .wrapper {
 
         text-align: center;
+
     }
     .arrow-left {
         width: 66px;
-        height: 66px;
         border: 2px solid $color-white;
         text-align: center;
         cursor: pointer;
+        @include tablet-landscape {
+            width: 46px;
+
+        }
+        @include tablet-portrait {
+            width: 38px;
+        }
+        @include mobile {
+            width: 32px;
+        }
+        .fa {
+            line-height: 66px;
+            font-size: 35px;
+            color: $color-white;
+            @include tablet-landscape {
+                font-size: 25px;
+                line-height: 46px;
+            }
+            @include tablet-portrait {
+                font-size: 22px;
+                line-height: 38px;
+            }
+            @include mobile {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
     }
     .arrow-right {
         width: 66px;
-        height: 66px;
+
         border: 2px solid $color-white;
         text-align: center;
         cursor: pointer;
-    }
-    .fa {
-        line-height: 66px;
-        font-size: 35px;
-         color: $color-white;
-    }
-    h1 {
-        font-size: 50px;
-        color: $color-white;
+        @include tablet-landscape {
+            width: 46px;
 
+        }
+        @include tablet-portrait {
+            width: 38px;
+        }
+        @include mobile {
+            width: 32px;
+        }
+        .fa {
+            line-height: 66px;
+            font-size: 35px;
+            color: $color-white;
+            @include tablet-landscape {
+                font-size: 25px;
+                line-height: 46px;
+            }
+            @include tablet-portrait {
+                font-size: 22px;
+                line-height: 38px;
+            }
+            @include mobile {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    h1 {
+
+        font-size: 48px;
+        color: $color-white;
+        text-transform: uppercase;
         font-weight: 600;
+        @include tablet-landscape {
+            font-size: 33px;
+        }
+        @include tablet-portrait {
+            font-size: 30px;
+        }
+        @include mobile {
+            font-size: 24px;
+        }
     }
     p {
         @include text;
         margin: auto;
         line-height: 22px;
-         color: $color-white;
+        color: $color-white;
+        @include tablet-landscape {
+            width: 90%;
+            margin: auto;
+            line-height: 20px;
+        }
+        @include tablet-portrait {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        @include mobile {
+            font-size: 10px;
+            line-height: 16px;
+        }
     }
     .btn {
         @include button($color-white);
         margin: auto;
         margin-top: 20px;
+        @include tablet-portrait {
+            margin-top: 10px;
+            line-height: 30px;
+            width: 120px;
+            font-size: 12px;
+        }
+        @include mobile {
+            width: 110px;
+            line-height: 28px;
+        }
     }
 }
 
@@ -69,69 +154,139 @@ section.features-home {
         display: flex;
         flex-wrap: wrap;
         padding-top: 40px;
-        justify-content: space-around;
+        justify-content: space-between;
+        @include tablet-landscape {
+            justify-content: space-around;
+        }
     }
     .wrapper {
-        width: 31%;
+        width: 29%;
         text-align: center;
         margin-bottom: 30px;
+
+        @include tablet-portrait {
+            width: 46%;
+        }
+        @include mobile {
+            width: 70%;
+        }
         .fa {
             font-size: 36px;
             color: $color-dark-grey;
+            @include tablet-landscape {
+                font-size: 28px;
+            }
+            @include tablet-portrait {
+                font-size: 22px;
+            }
         }
         h3 {
             font-size: 24px;
             color: $color-blue;
             margin: 10px 0;
             text-transform: uppercase;
+            @include tablet-landscape {
+                font-size: 20px;
+            }
+            @include tablet-portrait {
+                font-size: 18px;
+            }
         }
         p {
             @include text;
+            @include tablet-landscape {
+                line-height: 22px;
+                font-size: 12px;
+            }
+            @include tablet-portrait {
+                line-height: 20px;
+            }
         }
     }
 }
-section.stats-home{
+
+section.stats-home {
     width: 100%;
     background: $color-blue;
     padding: 40px 0;
-    .container{
-        display: flex;
+    @include tablet-portrait {
+        padding: 0;
     }
-    .wrapper{
+
+    .container {
+        display: flex;
+        @include tablet-portrait {
+            flex-wrap: wrap;
+        }
+    }
+    .wrapper {
         width: 25%;
         text-align: center;
+        @include tablet-portrait {
+            width: 50%;
+            padding: 25px 0;
+        }
+        @include mobile {
+            width: 70%;
+            margin: auto;
+        }
     }
-    h3{
+    h3 {
         font-size: 50px;
         font-weight: 600;
         color: $color-white;
+        @include tablet-landscape {
+            font-size: 40px;
+        }
+        @include tablet-portrait {
+            font-size: 32px;
+        }
     }
-    .h-line{
+    .h-line {
         height: 2px;
         width: 37px;
         background: $color-white;
         margin: 20px auto;
+        @include tablet-portrait {
+            width: 25px;
+        }
     }
-    h4{
+    h4 {
         font-size: 26px;
         font-weight: 400;
         color: $color-white;
+        @include tablet-landscape {
+            font-size: 20px;
+        }
+        @include tablet-portrait {
+            font-size: 16px;
+        }
     }
 }
-section.recent-blog-home{
+
+section.recent-blog-home {
     margin-top: 60px;
-    h2{
+    h2 {
         @include header;
         text-transform: uppercase;
     }
-    .h-line{
+    .h-line {
         margin-top: 10px;
         width: 64px;
         height: 2px;
         background: $color-blue;
+        @include tablet-portrait{
+            width: 50px;
+            margin-top: 8px;
+        }
+        @include mobile{
+            width: 44px;
+            margin-top: 5px;
+        }
     }
-    .news{
-        margin: 20px auto;;
+    .news {
+        margin: 20px auto;
+        ;
         width: 60%;
         height: 200px;
         border: 2px solid $color-blue;
