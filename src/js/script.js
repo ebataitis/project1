@@ -5,7 +5,7 @@ const DOMstrings = {
     arrowLeft: document.querySelector('.arrow-left'),
     arrowRight: document.querySelector('.arrow-right'),
     landingPageHome: document.querySelector('.landing-page-home'),
-
+    nav: document.querySelector('header .main-menu nav')
 };
 console.log(DOMstrings.sliderFotos);
 var fotoArray = [];
@@ -40,3 +40,9 @@ $('.fa-bars').click(function () {
     console.log('1223');
     $('header .main-menu nav').slideToggle()
 })
+window.addEventListener('resize', function () {
+if(window.innerWidth>600){
+    DOMstrings.nav.style.display = 'block'
+}elseif(window.innerWidth<=600)
+    {DOMstrings.nav.style.display = 'none'}
+});

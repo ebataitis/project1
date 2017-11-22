@@ -34,3 +34,8 @@ for (var i = 0; i < g.length; i++) {
     })(i);
 
 }
+$('.fa-bars').click(function () {
+    console.log('1223');
+    $('header .main-menu nav').slideToggle()
+})
+
