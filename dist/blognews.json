@@ -1,0 +1,28 @@
+{
+  "news": [
+    {
+      "img": "http://localhost:3000/project1/dist/img/blog/left3.jpeg",
+      "date1": "DATE",
+      "date2": "March 24,2015",
+      "heading": "How to Spend Less Than an Hour a Day on Email Marketing",
+      "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores harum accusamusnemo commodi, dignissimos sunt repudiandae, reprehenderit earum accusantium molestiae deleniti amet.Aperiam ab quis sed perspiciatis aliquam doloremque Lorem ipsum dolor sit amet, consecteturadipisicing elit. Esse velit, repudiandae veritatis vel ullam minima, sed deserunt ex expeditacumque perspiciatis laudantium nisi est asperiores placeat tempore sit, quis harum. Lorem ipsumdolor sit amet, consectetur adipisicing elit. Iste impedit facere quasi cum tempore, cumque, idcommodi quos necessitatibus nisi. Modi illo sint quae, quasi obcaecati esse asperiores deseruntdolorum!",
+      "buttonText": "read more"
+    },
+    {
+      "img": "http://localhost:3000/project1/dist/img/blog/left2.jpeg",
+      "date1": "DATE",
+      "date2": "March 24,2015",
+      "heading": "Looking for Developers? Try This Geeky Community",
+      "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores harum accusamusnemo commodi, dignissimos sunt repudiandae, reprehenderit earum accusantium molestiae deleniti amet.Aperiam ab quis sed perspiciatis aliquam doloremque Lorem ipsum dolor sit amet, consecteturadipisicing elit. Esse velit, repudiandae veritatis vel ullam minima, sed deserunt ex expeditacumque perspiciatis laudantium nisi est asperiores placeat tempore sit, quis harum. Lorem ipsumdolor sit amet, consectetur adipisicing elit. Iste impedit facere quasi cum tempore, cumque, idcommodi quos necessitatibus nisi. Modi illo sint quae, quasi obcaecati esse asperiores deseruntdolorum!",
+      "buttonText": "read more"
+    },
+    {
+      "img": "http://localhost:3000/project1/dist/img/blog/left1.jpeg",
+      "date1": "DATE",
+      "date2": "March 24,2015",
+      "heading": "Steps Toward Developing A Content Strategy",
+      "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores harum accusamusnemo commodi, dignissimos sunt repudiandae, reprehenderit earum accusantium molestiae deleniti amet.Aperiam ab quis sed perspiciatis aliquam doloremque Lorem ipsum dolor sit amet, consecteturadipisicing elit. Esse velit, repudiandae veritatis vel ullam minima, sed deserunt ex expeditacumque perspiciatis laudantium nisi est asperiores placeat tempore sit, quis harum. Lorem ipsumdolor sit amet, consectetur adipisicing elit. Iste impedit facere quasi cum tempore, cumque, idcommodi quos necessitatibus nisi. Modi illo sint quae, quasi obcaecati esse asperiores deseruntdolorum!",
+      "buttonText": "read more"
+    }
+  ]
+}

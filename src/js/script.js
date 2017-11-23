@@ -37,12 +37,15 @@ DOMstrings.arrowRight.addEventListener('click', function () {
 })
 
 $('.fa-bars').click(function () {
-    console.log('1223');
     $('header .main-menu nav').slideToggle()
 })
 window.addEventListener('resize', function () {
-if(window.innerWidth>600){
-    DOMstrings.nav.style.display = 'block'
-}elseif(window.innerWidth<=600)
-    {DOMstrings.nav.style.display = 'none'}
+    if (window.innerWidth > 600) {
+        DOMstrings.nav.style.display = 'block';
+        console.log('didesnis')
+
+    }  else if (window.innerWidth <= 600) {
+        DOMstrings.nav.style.display = 'none';
+        console.log('mazasnis');
+    }
 });
